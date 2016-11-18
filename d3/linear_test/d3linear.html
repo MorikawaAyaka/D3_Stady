@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>D3.js　棒グラフ</title>
+
+	<style>
+	svg{
+		width:320px;
+		height:340px;
+		border:2px solid black;
+	}
+	rect{fill:green;}
+	.fillPink{fill:pink;}
+
+
+	/*
+		縦棒グラフにラベルを表示する設定
+	*/
+	.barNum{
+		font-size:10px;
+		text-anchor:middle;
+	}
+
+	.axis text{
+		font-family:sans-serif;
+		font-size:11px;
+	}
+	.axis path,
+	.axis line{
+		fill:none;
+		stroke:green;
+	}
+	.axisX line{
+		fill:none;
+		stroke:black;
+	}
+	.barName{
+		font-size:9px;
+		text-anchor:middle;
+	}
+	</style>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+
+</head>
+<body>
+	<h2>d3 棒グラフ</h2>
+	<svg id="graph"></svg>
+	<script src="./js/linear.js"></script>
+</body>
+</html>

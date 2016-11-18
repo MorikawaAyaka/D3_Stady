@@ -1,0 +1,47 @@
+<!DOCTYPE html
+<html lang="ja">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p>Hello 1</p>
+    <p>Hello 2</p>
+    <p>Hello 3</p>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+      var dataset = [12,24,36];
+        var p = d3.select("body").selectAll("p");
+
+        p.data(dataset).text(function(d){
+          return d;
+        });
+
+        /*
+        p.text("hello from d3!");
+        p.style("font-size","28px");
+        */
+
+        /*
+        p.text("hello from d3!")
+            .style("font-size","28px")
+            .style("font-weight","bold");
+
+        //font-sizeの値の取得
+        alert(p.style("font-size"));
+        */
+
+        /*font-sizeをランダムで変える
+        p.style("font-size",function(){
+          return Math.floor(Math.random()*29) + "px";
+        });
+        */
+        //要素の追加(append),削除(remove)
+        //d3.select("body").append("p").text("hello 4").remove();
+
+
+    </script>
+</body>
+
+</html>
